@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header & Banner */
+.college-header {
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.college-header h1 {
+    color: #800000; /* สีเลือดหมูประจำสถาบัน */
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.college-header p.subtitle {
+    color: #d4af37; /* สีทอง */
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.motto-box {
+    background-color: #800000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* สไตล์ปุ่ม 3 ปุ่มหลัก */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 18px 25px;
+    background: linear-gradient(145deg, #800000, #5a0000);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(128, 0, 0, 0.25);
+}
+
+.btn-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #a00000, #800000);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(128, 0, 0, 0.35);
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #4a5568;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #2d3748;
+}
+
+/* ส่วนเนื้อหาในหน้าย่อย */
+.content-box {
+    text-align: left;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.content-box h2 {
+    color: #800000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d4af37;
+    padding-bottom: 8px;
+    font-size: 1.6rem;
+}
+
+.content-box h3 {
+    color: #333;
+    margin: 15px 0 10px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid #800000;
+    border-radius: 6px;
+}
+
+.map-container {
+    width: 100%;
+    height: 380px;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}

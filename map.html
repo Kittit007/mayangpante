@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนที่และการเดินทาง - วิทยาลัยเทคนิคนางรอง</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style> body { font-family: 'Prompt', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-emerald-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-emerald-700 p-2 rounded-xl text-xs font-bold border border-emerald-600">NRTC</div>
+                <span class="font-bold text-lg tracking-tight">วิทยาลัยเทคนิคนางรอง</span>
+            </div>
+            <a href="index.html" class="bg-emerald-700 hover:bg-emerald-600 px-4 py-2 rounded-xl text-sm font-medium transition-colors flex items-center space-x-1.5 shadow">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                <span>กลับหน้าหลัก</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-12 w-full">
+        
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 border border-slate-100">
+            <div class="inline-block bg-emerald-50 text-emerald-700 font-semibold text-xs px-3.5 py-1.5 rounded-lg mb-3">LOCATION & DIRECTIONS</div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">แผนที่และการเดินทางมายังวิทยาลัย</h2>
+            
+            <!-- Address Box -->
+            <div class="bg-emerald-50/70 rounded-2xl p-6 md:p-8 mb-8 border border-emerald-100 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div class="flex items-start space-x-4">
+                    <div class="bg-emerald-600 text-white p-3.5 rounded-2xl shadow-md mt-1">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-emerald-950">ที่ตั้งสถานศึกษา</h3>
+                        <p class="text-slate-700 mt-1 text-sm md:text-base leading-relaxed">เลขที่ 1 หมู่ 1 ถนนบ้านเก่า-แพงพวย ตำบลนางรอง อำเภอนางรอง จังหวัดบุรีรัมย์ 31110</p>
+                    </div>
+                </div>
+                <a href="https://maps.google.com/?q=วิทยาลัยเทคนิคนางรอง" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm px-6 py-3 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 whitespace-nowrap">
+                    <span>เปิด Google Maps</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                </a>
+            </div>
+
+            <!-- แผนผังวิทยาลัยเทคนิคนางรอง (เพิ่มใหม่) -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                    แผนผังภายในวิทยาลัย
+                </h3>
+                <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-900">
+                    <img src="OIP (2).webp" alt="แผนผังวิทยาลัยเทคนิคนางรอง" class="w-full h-auto object-contain max-h-[500px] mx-auto">
+                    <div class="p-3 bg-slate-900 text-xs text-slate-300 text-center font-medium">ภาพถ่ายมุมสูงแสดงตำแหน่งอาคารและโครงสร้างภายในวิทยาลัยเทคนิคนางรอง[cite: 12]</div>
+                </div>
+            </div>
+
+            <!-- อาคารและจุดสังเกตสถานศึกษา -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+                    <img src="OIP.webp" alt="อาคารอำนวยการ วิทยาลัยเทคนิคนางรอง" class="w-full h-52 object-cover">
+                    <div class="p-3 bg-slate-50 text-xs font-semibold text-slate-600 text-center">อาคารอำนวยการ วิทยาลัยเทคนิคนางรอง</div>
+                </div>
+                <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+                    <img src="kkk.webp" alt="อาคารเรียนและบรรยากาศสถานศึกษา" class="w-full h-52 object-cover">
+                    <div class="p-3 bg-slate-50 text-xs font-semibold text-slate-600 text-center">อาคารเรียนและบรรยากาศโดยรอบวิทยาลัย</div>
+                </div>
+            </div>
+
+            <!-- Map Iframe -->
+            <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 mb-10 h-96">
+                <iframe 
+                    class="w-full h-full border-0" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.79069512345!2d102.77!3d14.36!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c970036323cf1%3A0x7c73cb43f11d1c80!2sNang%20Rong%20Technical%20College!5e0!3m2!1sth!2sth!4v1650000000000!5m2!1sth!2sth" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Travel guide -->
+            <h3 class="text-xl font-bold text-slate-900 mb-6">คำแนะนำการเดินทาง</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 border border-slate-100 rounded-2xl bg-slate-50 shadow-sm">
+                    <div class="font-bold text-emerald-800 mb-2 flex items-center text-base">🚗 รถยนต์ส่วนตัว</div>
+                    <p class="text-sm text-slate-600 leading-relaxed">เดินทางตามเส้นทางหลวงสายหลักมุ่งสู่อำเภอนางรอง จังหวัดบุรีรัมย์ เลี้ยวเข้าสู่ถนนบ้านเก่า-แพงพวย วิทยาลัยตั้งอยู่เด่นชัดสังเกตง่าย</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl bg-slate-50 shadow-sm">
+                    <div class="font-bold text-emerald-800 mb-2 flex items-center text-base">🚌 รถโดยสารสาธารณะ</div>
+                    <p class="text-sm text-slate-600 leading-relaxed">นั่งรถโดยสารประจำทางสายกรุงเทพฯ-บุรีรัมย์ หรือสายอีสานใต้ ลงที่สถานีขนส่งอำเภอนางรอง แล้วต่อรถบริการรับจ้างเข้าสู่วิทยาลัย</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl bg-slate-50 shadow-sm">
+                    <div class="font-bold text-emerald-800 mb-2 flex items-center text-base">📍 จุดสังเกตใกล้เคียง</div>
+                    <p class="text-sm text-slate-600 leading-relaxed">ตั้งอยู่ใกล้กับย่านชุมชนและหน่วยงานราชการสำคัญในอำเภอนางรอง เดินทางสะดวก รวดเร็ว ปลอดภัย</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm mt-auto">
+        <p>&copy; 2026 วิทยาลัยเทคนิคนางรอง. สงวนลิขสิทธิ์ทั้งหมด.</p>
+    </footer>
+
+</body>
+</html>

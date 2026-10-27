@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิทยาลัยเทคนิคนางรอง - Nang Rong Technical College</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style> body { font-family: 'Prompt', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-blue-950 text-blue-200 text-xs py-2 px-4 text-center font-medium">
+        ✨ ยินดีต้อนรับสู่เว็บไซต์ทางการ วิทยาลัยเทคนิคนางรอง (Nang Rong Technical College) — ทักษะเยี่ยม เปี่ยมคุณธรรม ล้ำหน้าเทคโนโลยี
+    </div>
+
+    <!-- Hero Header -->
+    <header class="relative bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden shadow-xl">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="absolute inset-0">
+            <!-- ใส่รูปภาพบรรยากาศรวมวิทยาลัย (oop.webp) เป็นพื้นหลัง Header -->
+            <img src="oop.webp" alt="วิทยาลัยเทคนิคนางรอง" class="w-full h-full object-cover mix-blend-overlay opacity-40">
+        </div>
+        <div class="relative max-w-6xl mx-auto px-6 py-20 md:py-24 text-center">
+            <span class="inline-block bg-blue-500/30 border border-blue-400/40 text-blue-200 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest backdrop-blur-md mb-4">
+                สำนักงานคณะกรรมการการอาชีวศึกษา
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 drop-shadow-md">วิทยาลัยเทคนิคนางรอง</h1>
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">
+                มุ่งมั่นผลิตและพัฒนากำลังคนสมรรถนะสูง สู่ความเป็นเลิศทางวิชาชีพและเทคโนโลยี
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content & 3 Interactive Buttons -->
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-16 w-full">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">เมนูบริการหลักของสถานศึกษา</h2>
+            <div class="w-20 h-1.5 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+            <p class="text-slate-500 mt-3 text-sm md:text-base">เลือกหัวข้อข้อมูลที่คุณต้องการศึกษาและตรวจสอบ</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- ปุ่มที่ 1: รายละเอียดวิทยาลัย (ใช้รูปฝึกปฏิบัติ lpo.webp) -->
+            <a href="detail.html" class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col transform hover:-translate-y-2">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="lpo.webp" alt="รายละเอียดวิทยาลัย" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <span class="text-white font-medium text-xs bg-blue-600 px-3.5 py-1.5 rounded-xl shadow-md">ข้อมูลองค์กร & หลักสูตร</span>
+                    </div>
+                </div>
+                <div class="p-7 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors flex items-center">
+                        1. รายละเอียดวิทยาลัย
+                    </h3>
+                    <p class="text-slate-600 text-sm mt-3 flex-grow leading-relaxed">ทำความรู้จักประวัติความเป็นมา วิสัยทัศน์ ทำเนียบผู้บริหาร และสาขาวิชาที่เปิดสอนทั้ง ปวช. และ ปวส.</p>
+                    <div class="mt-6 flex items-center text-blue-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
+                        <span>ดูรายละเอียดทั้งหมด</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ปุ่มที่ 2: แผนที่และการเดินทาง (ใช้รูปหน้าอาคารอำนวยการ OIP.webp) -->
+            <a href="map.html" class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col transform hover:-translate-y-2">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="OIP.webp" alt="แผนที่และการเดินทาง" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <span class="text-white font-medium text-xs bg-emerald-600 px-3.5 py-1.5 rounded-xl shadow-md">พิกัดและเส้นทาง</span>
+                    </div>
+                </div>
+                <div class="p-7 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-800 group-hover:text-emerald-600 transition-colors flex items-center">
+                        2. แผนที่และการเดินทาง
+                    </h3>
+                    <p class="text-slate-600 text-sm mt-3 flex-grow leading-relaxed">พิกัดตั้งอยู่ ต.นางรอง อ.นางรอง จ.บุรีรัมย์ พร้อมแผนที่นำทางและคำแนะนำการเดินทางที่สะดวกที่สุด</p>
+                    <div class="mt-6 flex items-center text-emerald-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
+                        <span>ดูแผนที่และพิกัด</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ปุ่มที่ 3: ข้อมูลติดต่อวิทยาลัย (ใช้รูปกิจกรรมนักเรียน/นักศึกษา OIP (1).webp) -->
+            <a href="contact.html" class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col transform hover:-translate-y-2">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="OIP (1).webp" alt="ข้อมูลติดต่อวิทยาลัย" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
+                        <span class="text-white font-medium text-xs bg-indigo-600 px-3.5 py-1.5 rounded-xl shadow-md">ช่องทางติดต่อสื่อสาร</span>
+                    </div>
+                </div>
+                <div class="p-7 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-800 group-hover:text-indigo-600 transition-colors flex items-center">
+                        3. ข้อมูลติดต่อวิทยาลัย
+                    </h3>
+                    <p class="text-slate-600 text-sm mt-3 flex-grow leading-relaxed">ติดต่อสอบถามข้อมูลงานทะเบียน งานประชาสัมพันธ์ เบอร์โทรศัพท์ เว็บไซต์ทางการ และช่องทางออนไลน์</p>
+                    <div class="mt-6 flex items-center text-indigo-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
+                        <span>ติดต่อเรา</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm border-t border-slate-800 mt-auto">
+        <p>&copy; 2026 วิทยาลัยเทคนิคนางรอง (Nang Rong Technical College). สงวนลิขสิทธิ์ทั้งหมด.</p>
+        <p class="text-xs text-slate-500 mt-1">พัฒนาด้วยระบบสารสนเทศเพื่อการศึกษาและการประชาสัมพันธ์</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดวิทยาลัย - วิทยาลัยเทคนิคนางรอง</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style> body { font-family: 'Prompt', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-800 p-2 rounded-xl text-xs font-bold border border-blue-700">NRTC</div>
+                <span class="font-bold text-lg tracking-tight">วิทยาลัยเทคนิคนางรอง</span>
+            </div>
+            <a href="index.html" class="bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-xl text-sm font-medium transition-colors flex items-center space-x-1.5 shadow">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                <span>กลับหน้าหลัก</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-12 w-full">
+        
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 border border-slate-100">
+            <div class="inline-block bg-blue-50 text-blue-700 font-semibold text-xs px-3.5 py-1.5 rounded-lg mb-3">ABOUT US</div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">รายละเอียดและประวัติวิทยาลัยเทคนิคนางรอง</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-10">
+                <div class="space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+                    <p>
+                        <strong>วิทยาลัยเทคนิคนางรอง</strong> ตั้งอยู่ ณ อำเภอนางรอง จังหวัดบุรีรัมย์ เป็นสถานศึกษาชั้นนำสังกัดสำนักงานคณะกรรมการการอาชีวศึกษา กระทรวงศึกษาธิการ ที่มุ่งเน้นการจัดการเรียนการสอนสายอาชีพ ทั้งระดับประกาศนียบัตรวิชาชีพ (ปวช.) และประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)
+                    </p>
+                    <p>
+                        ภายในวิทยาลัยประกอบด้วยศูนย์ฝึกปฏิบัติงานทันสมัย เช่น <em>ศูนย์บ่มเพาะวิชาชีพ แผนกวิชาคอมพิวเตอร์ (COMTECH Service)</em>, ช่างยนต์, ช่างไฟฟ้า, ช่างอิเล็กทรอนิกส์, และพาณิชยกรรม เพื่อให้นักศึกษาได้ฝึกประสบการณ์จริงพร้อมก้าวสู่ตลาดแรงงานยุคดิจิทัล
+                    </p>
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <!-- ใช้ภาพฝึกปฏิบัติงานจริง (lpo.webp) -->
+                    <img src="lpo.webp" alt="การฝึกปฏิบัติงานจริงในวิทยาลัย" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent flex items-end p-4">
+                        <p class="text-white text-xs font-medium">บรรยากาศการเรียนรู้และการฝึกปฏิบัติงานจริง</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                <div class="bg-blue-50/70 border border-blue-100 p-6 rounded-2xl">
+                    <h3 class="text-lg font-bold text-blue-900 mb-2 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                        วิสัยทัศน์ (Vision)
+                    </h3>
+                    <p class="text-slate-700 text-sm leading-relaxed">"จัดการอาชีวศึกษาและฝึกอบรมวิชาชีพที่มีคุณภาพตามมาตรฐานสากล ผลิตกำลังคนสมรรถนะสูงสู่สากล"</p>
+                </div>
+                <div class="bg-emerald-50/70 border border-emerald-100 p-6 rounded-2xl">
+                    <h3 class="text-lg font-bold text-emerald-900 mb-2 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        พันธกิจหลัก
+                    </h3>
+                    <p class="text-slate-700 text-sm leading-relaxed">พัฒนาหลักสูตรทักษะวิชาชีพชั้นสูง ส่งเสริมงานวิจัย นวัตกรรม สิ่งประดิษฐ์ พร้อมปลูกฝังคุณธรรมจริยธรรม</p>
+                </div>
+            </div>
+
+            <!-- Management Team info -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8">
+                <h3 class="text-xl font-bold text-slate-900 mb-4">ทำเนียบผู้บริหารสถานศึกษา</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">ผอ</div>
+                        <div>
+                            <p class="font-bold text-slate-900">นายวิโรจณ์ ทองเรือง</p>
+                            <p class="text-xs text-slate-500">ผู้อำนวยการวิทยาลัยเทคนิคนางรอง</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-sm">รผอ</div>
+                        <div>
+                            <p class="font-bold text-slate-900">คณะผู้บริหารสถานศึกษา</p>
+                            <p class="text-xs text-slate-500">ฝ่ายบริหารทรัพยากร, แผนงาน, วิชาการ, และกิจการนักศึกษา</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm mt-auto">
+        <p>&copy; 2026 วิทยาลัยเทคนิคนางรอง. สงวนลิขสิทธิ์ทั้งหมด.</p>
+    </footer>
+
+</body>
+</html>
