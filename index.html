@@ -19,8 +19,7 @@
     <header class="relative bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden shadow-xl">
         <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="absolute inset-0">
-            <!-- ใส่รูปภาพบรรยากาศรวมวิทยาลัย (oop.webp) เป็นพื้นหลัง Header -->
-            <img src="oop.webp" alt="วิทยาลัยเทคนิคนางรอง" class="w-full h-full object-cover mix-blend-overlay opacity-40">
+            <img src="too/oop.webp" alt="วิทยาลัยเทคนิคนางรอง" class="w-full h-full object-cover mix-blend-overlay opacity-40">
         </div>
         <div class="relative max-w-6xl mx-auto px-6 py-20 md:py-24 text-center">
             <span class="inline-block bg-blue-500/30 border border-blue-400/40 text-blue-200 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest backdrop-blur-md mb-4">
@@ -33,77 +32,92 @@
         </div>
     </header>
 
-    <!-- Main Content & 3 Interactive Buttons -->
-    <main class="flex-grow max-w-6xl mx-auto px-6 py-16 w-full">
-        <div class="text-center mb-12">
-            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">เมนูบริการหลักของสถานศึกษา</h2>
-            <div class="w-20 h-1.5 bg-blue-600 mx-auto mt-3 rounded-full"></div>
-            <p class="text-slate-500 mt-3 text-sm md:text-base">เลือกหัวข้อข้อมูลที่คุณต้องการศึกษาและตรวจสอบ</p>
+    <!-- Main Content & Service Buttons -->
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12 w-full space-y-16">
+        
+        <!-- Section: เมนูหลัก 10 ปุ่ม -->
+        <div>
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">เมนูบริการหลัก 10 หมวดหมู่</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-500 mt-3 text-sm md:text-base">เลือกหัวข้อข้อมูลที่คุณต้องการศึกษาและตรวจสอบ</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                
+                <!-- ปุ่มที่ 1: หน้าแรก -->
+                <a href="index.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-blue-500 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">🏠</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-blue-600 text-sm">1. หน้าแรก</h3>
+                    <span class="text-xs text-slate-400 mt-1">Home</span>
+                </a>
+
+                <!-- ปุ่มที่ 2: ประวัติวิทยาลัย -->
+                <a href="detail.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-indigo-500 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-indigo-600 group-hover:text-white transition-colors">📜</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-indigo-600 text-sm">2. ประวัติวิทยาลัย</h3>
+                    <span class="text-xs text-slate-400 mt-1">History & Info</span>
+                </a>
+
+                <!-- ปุ่มที่ 3: หมวดหมู่สถานที่ -->
+                <a href="categories.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-teal-500 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-teal-600 group-hover:text-white transition-colors">🗂️</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-teal-600 text-sm">3. หมวดหมู่สถานที่</h3>
+                    <span class="text-xs text-slate-400 mt-1">Categories</span>
+                </a>
+
+                <!-- ปุ่มที่ 4: รายละเอียดสถานที่ -->
+                <a href="place-details.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-cyan-500 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-cyan-600 group-hover:text-white transition-colors">📌</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-cyan-600 text-sm">4. รายละเอียดสถานที่</h3>
+                    <span class="text-xs text-slate-400 mt-1">Place Details</span>
+                </a>
+
+                <!-- ปุ่มที่ 5: ติดต่อวิทยาลัย -->
+                <a href="contact.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-purple-500 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">📞</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-purple-600 text-sm">5. ติดต่อวิทยาลัย</h3>
+                    <span class="text-xs text-slate-400 mt-1">Contact Us</span>
+                </a>
+
+                <!-- ปุ่มที่ 6: ทำเนียบอาคาร -->
+                <a href="buildings.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-stone-600 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-stone-100 text-stone-700 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-stone-700 group-hover:text-white transition-colors">🏢</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-stone-700 text-sm">6. ทำเนียบอาคาร</h3>
+                    <span class="text-xs text-slate-400 mt-1">Buildings</span>
+                </a>
+
+                <!-- ปุ่มที่ 7: แผนที่ภายในวิทยาลัย -->
+                <a href="map.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-emerald-500 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-emerald-600 group-hover:text-white transition-colors">🗺️</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-emerald-600 text-sm">7. แผนที่ภายในวิทยาลัย</h3>
+                    <span class="text-xs text-slate-400 mt-1">Campus Map</span>
+                </a>
+
+                <!-- ปุ่มที่ 8: แผนกวิชา -->
+                <a href="departments.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-amber-500 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">🎓</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-amber-600 text-sm">8. แผนกวิชา</h3>
+                    <span class="text-xs text-slate-400 mt-1">Departments</span>
+                </a>
+
+                <!-- ปุ่มที่ 9: สิ่งอำนวยความสะดวก -->
+                <a href="facilities.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-green-600 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-green-600 group-hover:text-white transition-colors">🛋️</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-green-600 text-sm">9. สิ่งอำนวยความสะดวก</h3>
+                    <span class="text-xs text-slate-400 mt-1">Facilities</span>
+                </a>
+
+                <!-- ปุ่มที่ 10: ภาพกิจกรรมและสถานที่ -->
+                <a href="gallery.html" class="group bg-white p-5 rounded-2xl border border-slate-200 hover:border-rose-500 shadow-sm hover:shadow-md transition-all text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-rose-50 text-rose-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-rose-500 group-hover:text-white transition-colors">🖼️</div>
+                    <h3 class="font-bold text-slate-800 group-hover:text-rose-600 text-sm">10. ภาพกิจกรรมและสถานที่</h3>
+                    <span class="text-xs text-slate-400 mt-1">Gallery</span>
+                </a>
+
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <!-- ปุ่มที่ 1: รายละเอียดวิทยาลัย (ใช้รูปฝึกปฏิบัติ lpo.webp) -->
-            <a href="detail.html" class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col transform hover:-translate-y-2">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="lpo.webp" alt="รายละเอียดวิทยาลัย" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
-                        <span class="text-white font-medium text-xs bg-blue-600 px-3.5 py-1.5 rounded-xl shadow-md">ข้อมูลองค์กร & หลักสูตร</span>
-                    </div>
-                </div>
-                <div class="p-7 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors flex items-center">
-                        1. รายละเอียดวิทยาลัย
-                    </h3>
-                    <p class="text-slate-600 text-sm mt-3 flex-grow leading-relaxed">ทำความรู้จักประวัติความเป็นมา วิสัยทัศน์ ทำเนียบผู้บริหาร และสาขาวิชาที่เปิดสอนทั้ง ปวช. และ ปวส.</p>
-                    <div class="mt-6 flex items-center text-blue-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
-                        <span>ดูรายละเอียดทั้งหมด</span>
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ปุ่มที่ 2: แผนที่และการเดินทาง (ใช้รูปหน้าอาคารอำนวยการ OIP.webp) -->
-            <a href="map.html" class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col transform hover:-translate-y-2">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="OIP.webp" alt="แผนที่และการเดินทาง" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
-                        <span class="text-white font-medium text-xs bg-emerald-600 px-3.5 py-1.5 rounded-xl shadow-md">พิกัดและเส้นทาง</span>
-                    </div>
-                </div>
-                <div class="p-7 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-slate-800 group-hover:text-emerald-600 transition-colors flex items-center">
-                        2. แผนที่และการเดินทาง
-                    </h3>
-                    <p class="text-slate-600 text-sm mt-3 flex-grow leading-relaxed">พิกัดตั้งอยู่ ต.นางรอง อ.นางรอง จ.บุรีรัมย์ พร้อมแผนที่นำทางและคำแนะนำการเดินทางที่สะดวกที่สุด</p>
-                    <div class="mt-6 flex items-center text-emerald-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
-                        <span>ดูแผนที่และพิกัด</span>
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
-                    </div>
-                </div>
-            </a>
-
-            <!-- ปุ่มที่ 3: ข้อมูลติดต่อวิทยาลัย (ใช้รูปกิจกรรมนักเรียน/นักศึกษา OIP (1).webp) -->
-            <a href="contact.html" class="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-100 flex flex-col transform hover:-translate-y-2">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="OIP (1).webp" alt="ข้อมูลติดต่อวิทยาลัย" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-5">
-                        <span class="text-white font-medium text-xs bg-indigo-600 px-3.5 py-1.5 rounded-xl shadow-md">ช่องทางติดต่อสื่อสาร</span>
-                    </div>
-                </div>
-                <div class="p-7 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-slate-800 group-hover:text-indigo-600 transition-colors flex items-center">
-                        3. ข้อมูลติดต่อวิทยาลัย
-                    </h3>
-                    <p class="text-slate-600 text-sm mt-3 flex-grow leading-relaxed">ติดต่อสอบถามข้อมูลงานทะเบียน งานประชาสัมพันธ์ เบอร์โทรศัพท์ เว็บไซต์ทางการ และช่องทางออนไลน์</p>
-                    <div class="mt-6 flex items-center text-indigo-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
-                        <span>ติดต่อเรา</span>
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
-                    </div>
-                </div>
-            </a>
-
-        </div>
     </main>
 
     <!-- Footer -->

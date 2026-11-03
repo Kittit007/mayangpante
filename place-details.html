@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดสถานที่ - วิทยาลัยเทคนิคนางรอง</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style> body { font-family: 'Prompt', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-cyan-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-cyan-800 p-2 rounded-xl text-xs font-bold border border-cyan-700">NRTC</div>
+                <span class="font-bold text-lg tracking-tight">วิทยาลัยเทคนิคนางรอง</span>
+            </div>
+            <a href="index.html" class="bg-cyan-800 hover:bg-cyan-700 px-4 py-2 rounded-xl text-sm font-medium transition-colors flex items-center space-x-1.5 shadow">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                <span>กลับหน้าหลัก</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-12 w-full space-y-8">
+        
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 border border-slate-100">
+            <div class="inline-block bg-cyan-50 text-cyan-700 font-semibold text-xs px-3.5 py-1.5 rounded-lg mb-3">LOCATION DETAILS & CAMPUS PLAN</div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">รายละเอียดสถานที่และอาคารทั้งหมดในผังวิทยาลัย</h2>
+            <p class="text-slate-600 mb-8 text-sm md:text-base leading-relaxed">รวบรวมข้อมูลรายละเอียดและหน้าที่การใช้งานของอาคาร สถานที่ปฏิบัติการ และจุดสำคัญต่างๆ ตามแผนผังภาพถ่ายทางอากาศภายในวิทยาลัยเทคนิคนางรอง[cite: 17]</p>
+
+            <!-- Map Image Reference Preview -->
+            <div class="mb-10 rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-slate-900">
+                <img src="too/OIP (2).webp" alt="แผนผังวิทยาลัยเทคนิคนางรอง" class="w-full h-auto object-contain max-h-[400px] mx-auto">
+                <div class="p-3 bg-slate-900 text-xs text-slate-300 text-center font-medium">ภาพอ้างอิงตำแหน่งสถานที่จากแผนผังวิทยาลัยเทคนิคนางรอง[cite: 17]</div>
+            </div>
+
+            <!-- List of All Locations -->
+            <div class="space-y-6">
+                
+                <!-- 1. อาคารอำนวยการ -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/OIP.webp" alt="อาคารอำนวยการ" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">1. อาคารอำนวยการ</h3>
+                            <span class="text-xs font-semibold bg-rose-100 text-rose-800 px-3 py-1 rounded-md">โซนหน้าวิทยาลัย</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">ศูนย์กลางการบริหารงานของสถานศึกษา งานสารบรรณ งานทะเบียนนักเรียนนักศึกษา งานการเงิน และห้องทำงานผู้อำนวยการวิทยาลัย</p>
+                    </div>
+                </div>
+
+                <!-- 2. อาคาร 1 -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/ปช.jfif" alt="อาคาร 1" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">2. อาคาร 1 (อาคารประชุมและสำนักงาน)</h3>
+                            <span class="text-xs font-semibold bg-purple-100 text-purple-800 px-3 py-1 rounded-md">ฝั่งซ้าย</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">อาคารสำหรับการประชุมสัมมนา ห้องประชุมใหญ่ และสำนักงานสนับสนุนการเรียนการสอน</p>
+                    </div>
+                </div>
+
+                <!-- 3. อาคาร 2 -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/kkk.webp" alt="อาคาร 2" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">3. อาคาร 2 (อาคารเรียนหลัก)</h3>
+                            <span class="text-xs font-semibold bg-blue-100 text-blue-800 px-3 py-1 rounded-md">ฝั่งขวา</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">อาคารเรียนทฤษฎีหลายชั้น ประกอบด้วยห้องเรียนหมวดวิชาสามัญและห้องปฏิบัติการคอมพิวเตอร์เทคโนโลยี</p>
+                    </div>
+                </div>
+
+                <!-- 4. อาคาร 3 -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/kkk.webp" alt="อาคาร 3" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">4. อาคาร 3 (อาคารซ่อมบำรุงไฟฟ้า)</h3>
+                            <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-md">ฝั่งขวาบน</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">ห้องปฏิบัติการฝึกทักษะแผนกวิชาช่างไฟฟ้ากำลัง งานเครื่องทำความเย็น และระบบไฟฟ้าอุตสาหกรรม</p>
+                    </div>
+                </div>
+
+                <!-- 5. อาคาร 4 -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/oop.webp" alt="อาคาร 4" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">5. อาคาร 4 (อาคารเรียนปฏิบัติการช่าง)</h3>
+                            <span class="text-xs font-semibold bg-amber-100 text-amber-800 px-3 py-1 rounded-md">ฝั่งซ้าย</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">อาคารเรียนภาคปฏิบัติและทฤษฎีสำหรับสนับสนุนหลักสูตรช่างอุตสาหกรรม</p>
+                    </div>
+                </div>
+
+                <!-- 6. โดมอเนกประสงค์ -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/โดม.jfif" alt="โดมอเนกประสงค์" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">6. โดมอเนกประสงค์ (โดมใหญ่)</h3>
+                            <span class="text-xs font-semibold bg-indigo-100 text-indigo-800 px-3 py-1 rounded-md">โซนกลางวิทยาลัย</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">ลานร่มอเนกประสงค์ขนาดใหญ่สำหรับใช้เข้าแถวเคารพธงชาติ จัดกิจกรรมหน้าเสาธง การประชุมนักศึกษา และกิจกรรมนันทนาการกีฬาภายใน</p>
+                    </div>
+                </div>
+
+                <!-- 7. โรงอาหาร -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/kkk.webp" alt="โรงอาหาร" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">7. โรงอาหารวิทยาลัย</h3>
+                            <span class="text-xs font-semibold bg-teal-100 text-teal-800 px-3 py-1 rounded-md">ฝั่งขวา</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">ศูนย์อาหารและสวัสดิการให้บริการอาหารและเครื่องดื่มถูกสุขอนามัยสำหรับนักเรียน ครู และบุคลากร</p>
+                    </div>
+                </div>
+
+                <!-- 8. โรงฝึกงานช่างกลและช่างเชื่อม -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/กลเชทื่อม.jfif" alt="โรงฝึกงานช่างกล" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">8. โรงฝึกงานช่างกลโรงงาน & ช่างเชื่อมโลหะ</h3>
+                            <span class="text-xs font-semibold bg-stone-200 text-stone-800 px-3 py-1 rounded-md">ฝั่งขวา</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">โรงฝึกปฏิบัติการเครื่องจักรกลอุตสาหกรรม งานกลึง งานกัด งานเจาะ CNC และศูนย์ฝึกปฏิบัติการเชื่อมโลหะมาตรฐานสากล</p>
+                    </div>
+                </div>
+
+                <!-- 9. ศูนย์วิทยบริการและสนามกีฬา -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/kkk.webp" alt="ศูนย์วิทยบริการ" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">9. ศูนย์วิทยบริการ / พยาบาล / สนามกีฬา</h3>
+                            <span class="text-xs font-semibold bg-cyan-100 text-cyan-800 px-3 py-1 rounded-md">โซนกลาง-หลัง</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">ห้องสมุดดิจิทัล ห้องพยาบาลสำหรับปฐมพยาบาลเบื้องต้น พื้นที่กิจกรรมลูกเสือ และสนามกีฬากลางแจ้งสำหรับออกกำลังกาย</p>
+                    </div>
+                </div>
+
+                <!-- 10. ทางเข้าและลานจอดรถ -->
+                <div class="flex flex-col md:flex-row gap-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 items-center">
+                    <img src="too/ป้าย.jfif" alt="ทางเข้าวิทยาลัย" class="w-full md:w-56 h-36 object-cover rounded-xl shrink-0">
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-bold text-slate-900">10. ประตูทางเข้า & ลานจอดรถจักรยานยนต์</h3>
+                            <span class="text-xs font-semibold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-md">ทางเข้าหลัก</span>
+                        </div>
+                        <p class="text-slate-600 text-sm leading-relaxed">จุดตรวจรักษาความปลอดภัย ประตูทางเข้าหลักด้านหน้า และโรงจอดรถจักรยานยนต์สำหรับนักเรียนนักศึกษา</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm mt-auto">
+        <p>&copy; 2026 วิทยาลัยเทคนิคนางรอง. สงวนลิขสิทธิ์ทั้งหมด.</p>
+    </footer>
+
+</body>
+</html>

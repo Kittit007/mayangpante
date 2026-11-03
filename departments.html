@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แผนกวิชาที่เปิดสอน - วิทยาลัยเทคนิคนางรอง</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style> body { font-family: 'Prompt', sans-serif; } </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-800 p-2 rounded-xl text-xs font-bold border border-blue-700">NRTC</div>
+                <span class="font-bold text-lg tracking-tight">วิทยาลัยเทคนิคนางรอง</span>
+            </div>
+            <a href="index.html" class="bg-blue-800 hover:bg-blue-700 px-4 py-2 rounded-xl text-sm font-medium transition-colors flex items-center space-x-1.5 shadow">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                <span>กลับหน้าหลัก</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12 w-full">
+        
+        <div class="text-center mb-10">
+            <span class="text-xs font-semibold bg-blue-100 text-blue-700 px-3.5 py-1.5 rounded-full uppercase tracking-wider">Academic Departments</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">แผนกวิชาที่เปิดสอน</h2>
+            <div class="w-20 h-1.5 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+            <p class="text-slate-600 mt-3 text-sm md:text-base">เลือกแผนกวิชาที่ต้องการเพื่อดูรายละเอียดหลักสูตรและการเรียนการสอน</p>
+        </div>
+
+        <!-- Grid 10 แผนกวิชา -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            
+            <!-- 1. ช่างยนต์ -->
+            <a href="dept-auto.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-blue-500 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">🚗</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-blue-600 text-sm">แผนกช่างยนต์</h4>
+                <span class="text-xs text-slate-400 mt-1">Automotive Tech</span>
+            </a>
+
+            <!-- 2. ช่างไฟฟ้ากำลัง -->
+            <a href="dept-electric.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-amber-500 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">⚡</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-amber-600 text-sm">แผนกช่างไฟฟ้า</h4>
+                <span class="text-xs text-slate-400 mt-1">Electrical Power</span>
+            </a>
+
+            <!-- 3. ช่างอิเล็กทรอนิกส์ -->
+            <a href="dept-electronics.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-red-500 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-red-600 group-hover:text-white transition-colors">📻</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-red-600 text-sm">แผนกอิเล็กทรอนิกส์</h4>
+                <span class="text-xs text-slate-400 mt-1">Electronics</span>
+            </a>
+
+            <!-- 4. ช่างกลโรงงาน -->
+            <a href="dept-machinist.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-slate-600 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-slate-100 text-slate-700 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-slate-700 group-hover:text-white transition-colors">⚙️</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-slate-700 text-sm">แผนกช่างกลโรงงาน</h4>
+                <span class="text-xs text-slate-400 mt-1">Machine Tool</span>
+            </a>
+
+            <!-- 5. ช่างเชื่อมโลหะ -->
+            <a href="dept-welding.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-orange-500 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-orange-500 group-hover:text-white transition-colors">👨‍🏭</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-orange-600 text-sm">แผนกช่างเชื่อม</h4>
+                <span class="text-xs text-slate-400 mt-1">Welding Tech</span>
+            </a>
+
+            <!-- 6. ช่างก่อสร้าง -->
+            <a href="dept-construction.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-yellow-600 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-yellow-50 text-yellow-700 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-yellow-600 group-hover:text-white transition-colors">🏗️</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-yellow-700 text-sm">แผนกช่างก่อสร้าง</h4>
+                <span class="text-xs text-slate-400 mt-1">Construction</span>
+            </a>
+
+            <!-- 7. เทคโนโลยีธุรกิจดิจิทัล / คอมพิวเตอร์ -->
+            <a href="dept-computer.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-indigo-600 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-indigo-600 group-hover:text-white transition-colors">💻</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-indigo-600 text-sm">แผนกคอมพิวเตอร์</h4>
+                <span class="text-xs text-slate-400 mt-1">Business Computer</span>
+            </a>
+
+            <!-- 8. การบัญชี -->
+            <a href="dept-accounting.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-emerald-600 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-emerald-600 group-hover:text-white transition-colors">📊</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-emerald-600 text-sm">แผนกการบัญชี</h4>
+                <span class="text-xs text-slate-400 mt-1">Accounting</span>
+            </a>
+
+            <!-- 9. การตลาด -->
+            <a href="dept-marketing.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-purple-600 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">📈</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-purple-600 text-sm">แผนกการตลาด</h4>
+                <span class="text-xs text-slate-400 mt-1">Marketing</span>
+            </a>
+
+            <!-- 10. การโรงแรม -->
+            <a href="dept-hotel.html" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-pink-500 shadow-sm hover:shadow-md transition-all text-center group flex flex-col items-center">
+                <div class="w-14 h-14 bg-pink-50 text-pink-600 rounded-2xl flex items-center justify-center text-2xl mb-3 group-hover:bg-pink-500 group-hover:text-white transition-colors">🏨</div>
+                <h4 class="font-bold text-slate-800 group-hover:text-pink-600 text-sm">แผนกการโรงแรม</h4>
+                <span class="text-xs text-slate-400 mt-1">Hospitality</span>
+            </a>
+
+        </div>
+
+        
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm mt-auto">
+        <p>&copy; 2026 วิทยาลัยเทคนิคนางรอง. สงวนลิขสิทธิ์ทั้งหมด.</p>
+    </footer>
+
+</body>
+</html>
